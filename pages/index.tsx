@@ -5,7 +5,7 @@ import CardsComponent from '../components/CardsComponent';
 
 export default function Home() {
   return (
-    <div className='bg-primary m-3 rounded-2xl ' style={{width:'800px', height:'500px'}}>
+    <div className='bg-primary m-3 rounded-2xl ' style={{width:'1000px', height:'600px'}}>
      <div>
        <div className='w-12 h-40 relative top-7 left-3 rounded-sm text-white'>
          <AiFillSignal className="w-8 h-6" />
@@ -15,7 +15,7 @@ export default function Home() {
          <AiOutlinePoweroff className='w-8 h-6' style={{marginTop:'80px'}} />
        </div>
        <span className='text-white text-lg absolute top-7 left-10 px-10'>cards analytics</span>
-       <div className='absolute' style={{width:'500px',height:'200px',top:'80px', left:'80px'}}>
+       <div className='absolute' style={{width:'650px',height:'200px',top:'80px', left:'80px'}}>
          <CardsComponent/>
        </div>
      </div>
