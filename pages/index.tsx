@@ -1,7 +1,7 @@
 import Head from 'next/head'
 import Image from 'next/image'
 import {AiFillSignal,AiOutlinePieChart,AiTwotonePicture,AiTwotoneSetting,AiOutlinePoweroff} from 'react-icons/ai'
-import CardComponent from '../../components/CardComponent';
+import CardComponent from '../components/CardComponent';
 
 export default function Home() {
   return (
@@ -15,6 +15,9 @@ export default function Home() {
          <AiOutlinePoweroff className='w-8 h-6' style={{marginTop:'80px'}} />
        </div>
        <span className='text-white text-lg absolute top-7 left-10 px-10'>cards analytics</span>
+       <div className='bg-red-400 absolute' style={{width:'500px',height:'200px',top:'80px', left:'80px'}}>
+         <CardComponent/>
+       </div>
      </div>
     </div>
   )
