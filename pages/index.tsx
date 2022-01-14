@@ -14,7 +14,7 @@ export default function Home() {
          <AiTwotoneSetting className='w-8 h-6 mt-8' />
          <AiOutlinePoweroff className='w-8 h-6' style={{marginTop:'80px'}} />
        </div>
-       <span className='text-white text-lg absolute top-7 left-10 px-10'>cards analytics</span>
+       <span className='text-white text-lg absolute top-7 left-10 px-10 capitalize'>cards analytics</span>
        <div className='absolute' style={{width:'650px',height:'200px',top:'80px', left:'80px'}}>
          <CardsComponent/>
        </div>
