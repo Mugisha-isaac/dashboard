@@ -1,6 +1,7 @@
 import Head from 'next/head'
 import Image from 'next/image'
 import {AiFillSignal,AiOutlinePieChart,AiTwotonePicture,AiTwotoneSetting,AiOutlinePoweroff} from 'react-icons/ai'
+import CardComponent from '../../components/CardComponent';
 
 export default function Home() {
   return (
