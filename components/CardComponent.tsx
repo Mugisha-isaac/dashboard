@@ -11,6 +11,11 @@ const CardComponent:FunctionComponent<
         <div style={{backgroundColor: background_color, width:'300px', height:'200px'}} className="rounded-2xl">
             <h6 className="uppercase text-sm pt-3 pl-3 text-small_white ">card name</h6> 
             <span className="px-3 bold text-big_white ">{card_name}</span>  
+            <div>
+            <svg viewBox="0 0 100 100" xmlns="http://www.w3.org/2000/svg">
+            <circle cx="5" cy="5" r="5"/>
+         </svg>
+            </div>
             <div className="px-3  mt-8 ">
               <span className="text-xl text-white">&#x22C6; &#x22C6; &#x22C6;&#x22C6;</span>  <span className="text-xl text-white" >&#x22C6; &#x22C6; &#x22C6; &#x22C6;</span>   <span className="text-xl text-white">&#x22C6; &#x22C6; &#x22C6; &#x22C6;</span>
               <span className="text-big_white px-2 text-lg">{card_number}</span>
