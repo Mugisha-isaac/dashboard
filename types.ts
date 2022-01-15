@@ -8,8 +8,11 @@ export interface ICard{
 }
 
 export interface ITransactions{
+    card_id:number,
     trans_id:number,
     trans_name:string,
     status:string,
-    value:string
+    value:string,
+    date:string,
+    time:string,
 }

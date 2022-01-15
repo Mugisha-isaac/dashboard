@@ -10,7 +10,8 @@ module.exports = {
           primary:'#212530',
           secondary:'#21222D',
           small_white:'#C3E2E1',
-          big_white:'#EDF7F6'
+          big_white:'#EDF7F6',
+          low_dark:'#3B3B47',
       }
     },
   },

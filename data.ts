@@ -1,4 +1,4 @@
-import { ICard } from './types'
+import { ICard, ITransactions } from './types'
 
 
 export const Cards:ICard[]= [
@@ -34,4 +34,154 @@ export const Cards:ICard[]= [
         cvv:20748,
         color: '#F29943'
     }
+]
+
+
+export const Transactions:ITransactions[]=[
+    {
+        card_id:1,
+        trans_id:1,
+        trans_name:'Transfer to Viola',
+        status:'credit',
+        value:'124,00',
+        date:'27 April 2022',
+        time:'12:00 pm'
+    },
+    {
+        card_id:1,
+        trans_id:2,
+        trans_name:'AprilPayment',
+        status:'payment',
+        value:'900,00',
+        date:'27 April 2022',
+        time:'14:23 pm'
+    },
+    {
+        card_id:1,
+        trans_id:3,
+        trans_name:'Transfer from Vicky',
+        status:'Debit',
+        value:'3,000,00',
+        date:'27 April 2022',
+        time:'14:23 pm'
+    },
+    {
+        card_id:1,
+        trans_id:4,
+        trans_name:'Transfer to Viola',
+        status:'credit',
+        value:'124,00',
+        date:'27 April 2022',
+        time:'14:23 pm'
+    },
+
+    {
+        card_id:2,
+        trans_id:1,
+        trans_name:'Transfer to Viola',
+        status:'credit',
+        value:'124,00',
+        date:'27 April 2022',
+        time:'12:00 pm'
+    },
+    {
+        card_id:2,
+        trans_id:2,
+        trans_name:'AprilPayment',
+        status:'payment',
+        value:'900,00',
+        date:'27 April 2022',
+        time:'14:23 pm'
+    },
+    {
+        card_id:2,
+        trans_id:3,
+        trans_name:'Transfer from Vicky',
+        status:'Debit',
+        value:'3,000,00',
+        date:'27 April 2022',
+        time:'14:23 pm'
+    },
+    {
+        card_id:2,
+        trans_id:4,
+        trans_name:'Transfer to Viola',
+        status:'credit',
+        value:'124,00',
+        date:'27 April 2022',
+        time:'14:23 pm'
+    },
+    {
+        card_id:3,
+        trans_id:1,
+        trans_name:'Transfer to Viola',
+        status:'credit',
+        value:'124,00',
+        date:'27 April 2022',
+        time:'12:00 pm'
+    },
+    {
+        card_id:3,
+        trans_id:2,
+        trans_name:'AprilPayment',
+        status:'payment',
+        value:'900,00',
+        date:'27 April 2022',
+        time:'14:23 pm'
+    },
+    {
+        card_id:3,
+        trans_id:3,
+        trans_name:'Transfer from Vicky',
+        status:'Debit',
+        value:'3,000,00',
+        date:'27 April 2022',
+        time:'14:23 pm'
+    },
+    {
+        card_id:3,
+        trans_id:4,
+        trans_name:'Transfer to Viola',
+        status:'credit',
+        value:'124,00',
+        date:'27 April 2022',
+        time:'14:23 pm'
+    },
+    {
+        card_id:4,
+        trans_id:1,
+        trans_name:'Transfer to Viola',
+        status:'credit',
+        value:'124,00',
+        date:'27 April 2022',
+        time:'12:00 pm'
+    },
+    {
+        card_id:4,
+        trans_id:2,
+        trans_name:'AprilPayment',
+        status:'payment',
+        value:'900,00',
+        date:'27 April 2022',
+        time:'14:23 pm'
+    },
+    {
+        card_id:4,
+        trans_id:3,
+        trans_name:'Transfer from Vicky',
+        status:'Debit',
+        value:'3,000,00',
+        date:'27 April 2022',
+        time:'14:23 pm'
+    },
+    {
+        card_id:4,
+        trans_id:4,
+        trans_name:'Transfer to Viola',
+        status:'credit',
+        value:'124,00',
+        date:'27 April 2022',
+        time:'14:23 pm'
+    }
+
 ]

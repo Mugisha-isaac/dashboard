@@ -1,14 +1,16 @@
 import { height } from "@mui/system";
 import { FunctionComponent, useState } from "react"
-import { ICard } from "../types"
+import { ICard, ITransactions } from "../types"
+import {BsFillPlusCircleFill} from 'react-icons/bs'
 
 
 const CardComponent:FunctionComponent<
-{card:ICard}
-> = ({card:{card_name,exp_date,cvv,color,card_number}}) => {
+{card:ICard,cardData:ITransactions}
+> = ({card:{card_name,exp_date,cvv,color,card_number},cardData:{card_id,trans_id,trans_name,date,status,time,value}}) => {
     let background_color = color;
     return (
-        <div style={{backgroundColor: background_color, width:'300px', height:'200px'}} className="rounded-2xl">
+        <>
+        <div style={{backgroundColor: background_color, width:'300px', height:'200px'}} className="rounded-2xl relative">
             <h6 className="uppercase text-sm pt-3 pl-3 text-small_white ">card name</h6> 
             <span className="px-3 bold text-big_white ">{card_name}</span>  
             <div className="absolute top-5" style={{right:'80px'}}>
@@ -30,7 +32,13 @@ const CardComponent:FunctionComponent<
                 </div>
             </div>
         </div>
-       
+        <div className="bg-low_dark rounded-2xl relative " style={{width:'480px', marginTop:'-240px', marginLeft:'430px', height:'540px'}} >
+               <div className="border-dotted bg-red-400 absolute top-5 right-5 " style={{width:'120px', height:'140px'}}>
+                 <BsFillPlusCircleFill className="text-white h-7 w-7" style={{marginTop:'20px', marginLeft:'50px'}} />
+                 <span className="text-small">ADD CARD</span>
+               </div>
+            </div>
+       </>
     )
 }
 
