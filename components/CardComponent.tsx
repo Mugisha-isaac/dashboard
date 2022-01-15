@@ -11,7 +11,9 @@ const CardComponent:FunctionComponent<
         <div style={{backgroundColor: background_color, width:'300px', height:'200px'}} className="rounded-2xl">
             <h6 className="uppercase text-sm pt-3 pl-3 text-small_white ">card name</h6> 
             <span className="px-3 bold text-big_white ">{card_name}</span>  
-            <div>
+            <div className="absolute top-5" style={{right:'80px'}}>
+                <div className="bg-small_white w-8 h-8 rounded-full absolute top-0 left-0"></div>
+                <div className="bg-big_white w-8 h-8 rounded-full absolute top-0 left-5"></div>
             </div>
             <div className="px-3  mt-8 ">
               <span className="text-xl text-white">&#x22C6; &#x22C6; &#x22C6;&#x22C6;</span>  <span className="text-xl text-white" >&#x22C6; &#x22C6; &#x22C6; &#x22C6;</span>   <span className="text-xl text-white">&#x22C6; &#x22C6; &#x22C6; &#x22C6;</span>
