@@ -1,7 +1,7 @@
 export interface ICard{
     card_id:number,
     card_name:string,
-    rating: number,
+    card_number:number,
     exp_date:string,
     cvv:number,
     color:string
