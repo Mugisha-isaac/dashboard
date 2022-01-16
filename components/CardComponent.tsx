@@ -41,7 +41,7 @@ const CardComponent:FunctionComponent<
                    <p className="capitalize text-xl  text-white px-8">last transactions</p>
                    <p className="px-8 text-small_white">{date}</p>
                    <div>
-                       {}
+                       {trans_name}
                    </div>
                </div>
             </div>
