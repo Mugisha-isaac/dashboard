@@ -5,8 +5,8 @@ import {BsFillPlusCircleFill} from 'react-icons/bs'
 
 
 const CardComponent:FunctionComponent<
-{card:ICard,cardData:ITransactions}
-> = ({card:{card_name,exp_date,cvv,color,card_number},cardData:{card_id,trans_id,trans_name,date,status,time,value}}) => {
+{card:ICard,cardData:Array<ITransactions>}
+> = ({card:{card_name,exp_date,cvv,color,card_number}}) => {
     let background_color = color;
     return (
         <>
@@ -39,9 +39,9 @@ const CardComponent:FunctionComponent<
                </div>
                <div className=" absolute" style={{marginTop:'180px', width:'100%'}}>
                    <p className="capitalize text-xl  text-white px-8">last transactions</p>
-                   <p className="px-8 text-small_white">{date}</p>
+                   <p className="px-8 text-small_white">date</p>
                    <div>
-                       {trans_name}
+                      {/* {trans_name} */}
                    </div>
                </div>
             </div>

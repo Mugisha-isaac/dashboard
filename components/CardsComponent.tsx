@@ -11,23 +11,23 @@ export default function CardsComponent() {
   // console.log(TransactionsOfFirstCards);
   const [card, setCard] = useState<ICard>(Cards[0]);
   const [active, setActive] = useState<number>(Cards[0].card_id);
-  const [cardData, setCardData] = useState<ITransactions | any>(
+  const [cardData, setCardData] = useState<Array<ITransactions>>(
     TransactionsOfFirstCards
   );
   useEffect(() => {
     for (let i = 0; i < Cards.length; i++) {
       if (Cards[i].card_id === active) {
         setCard(Cards.find((card) => card.card_id === active));
-        //  setCardData(Transactions.find(trans=>trans.card_id===active));
-        for (let i = 0; i < Transactions.length; i++) {
-          if (Transactions[i].card_id === active) {
-            setCardData(Transactions[i]);
-          }
-        }
       }
     }
-  }, [Cards, cardData, active]);
-
+    const transactions: Array<ITransactions> = [];
+    for(let i=0;i<Transactions.length;i++){
+      if(Transactions[i].card_id === active){
+       transactions.push(Transactions[i]);
+      }
+    }
+    setCardData(transactions);
+  }, [active]);
   const isLast = (cardId) => {
     return Cards[Cards.length - 1].card_id === cardId;
   };
