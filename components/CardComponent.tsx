@@ -33,9 +33,16 @@ const CardComponent:FunctionComponent<
             </div>
         </div>
         <div className="bg-low_dark rounded-2xl relative " style={{width:'480px', marginTop:'-240px', marginLeft:'430px', height:'540px'}} >
-               <div className="border-dotted bg-red-400 absolute top-5 right-5 " style={{width:'120px', height:'140px'}}>
-                 <BsFillPlusCircleFill className="text-white h-7 w-7" style={{marginTop:'20px', marginLeft:'50px'}} />
-                 <span className="text-small">ADD CARD</span>
+               <div className="border-dotted border-white bg-red-400 absolute top-5 right-5 " style={{width:'120px', height:'140px'}}>
+                 <BsFillPlusCircleFill className="text-white h-7 w-7 bg-none" style={{marginTop:'20px', marginLeft:'50px'}} />
+                 <p className="text-small text-white pt-10 pl-5 ">ADD CARD</p>
+               </div>
+               <div className=" absolute" style={{marginTop:'180px', width:'100%'}}>
+                   <p className="capitalize text-xl  text-white px-8">last transactions</p>
+                   <p className="px-8 text-small_white">{date}</p>
+                   <div>
+                       {}
+                   </div>
                </div>
             </div>
        </>
