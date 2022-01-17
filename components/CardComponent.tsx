@@ -1,4 +1,4 @@
-import { height } from "@mui/system";
+import { borderColor, height } from "@mui/system";
 import { FunctionComponent, useState } from "react"
 import { ICard, ITransactions } from "../types"
 import {BsFillPlusCircleFill} from 'react-icons/bs'
@@ -55,15 +55,15 @@ const CardComponent:FunctionComponent<
                         cardData[0].date
                     }   
                     </p>
-                   <div className="" style={{marginTop:'80px'}}>
+                   <div className="" style={{marginTop:'60px'}}>
                      {
                          cardData.map(data=>(
-                         <div className=" px-5 mt-3 text-white">
+                         <div className=" px-5 mt-3 text-white last:border-collapse  ml-3" style={{width:'95%', height:'auto', borderBottom:'1px solid #C3E2E1 '}}>
                              <div className="grid grid-cols-3 grid-rows-1  mb-6">
                                 {/* <p><BiLogIn className="w-4 h-2"/></p>  */}
                                 <p>{data.trans_name}</p>
                                 {/* <p className="text-small_white  px-6">{data.status}</p> */}
-                                <div className="">
+                                <div className="" style={{marginLeft:'60px'}}>
                                 {
                                     data.status === 'credit' ?(
                                         <div className="flex flex-row clear-left">
@@ -82,7 +82,7 @@ const CardComponent:FunctionComponent<
                                 }
                                 </div>
                                 <div>
-                                <p style={{marginRight:'60px'}} className="">{data.value}</p>
+                                <p style={{marginLeft:'90px'}} className="">{data.value}</p>
                                 </div>
                             
                                  </div>

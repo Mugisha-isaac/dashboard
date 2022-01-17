@@ -13,7 +13,8 @@ module.exports = {
           big_white:'#EDF7F6',
           low_dark:'#3B3B47',
           yellow:'#F29943',
-          green:'#32B3A7'
+          green:'#32B3A7',
+          border_color:'#373743'
       }
     },
   },
