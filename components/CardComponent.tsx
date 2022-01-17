@@ -2,7 +2,7 @@ import { height } from "@mui/system";
 import { FunctionComponent, useState } from "react"
 import { ICard, ITransactions } from "../types"
 import {BsFillPlusCircleFill} from 'react-icons/bs'
-import {BiCircle} from 'react-icons/bi'
+import {BiLogIn} from 'react-icons/bi'
 
 
 const CardComponent:FunctionComponent<
@@ -59,20 +59,21 @@ const CardComponent:FunctionComponent<
                      {
                          cardData.map(data=>(
                          <div className=" px-5 mt-3 text-white">
-                             <div className="grid grid-cols-3 grid-rows-1 ml-5 mb-6 " style={{width:'100%'}}>
+                             <div className="grid grid-cols-3 grid-rows-1  mb-6">
+                                {/* <p><BiLogIn className="w-4 h-2"/></p>  */}
                                 <p>{data.trans_name}</p>
                                 {/* <p className="text-small_white  px-6">{data.status}</p> */}
-                                <div className="px-8">
+                                <div className="">
                                 {
                                     data.status === 'credit' ?(
-                                        <div className="flex flex-row">
+                                        <div className="flex flex-row clear-left">
                                         <div className="w-2 h-2 bg-yellow rounded-full mt-1"></div>
                                         <p className="capitalize " style={{marginTop:'-4px', marginLeft:'5px'}}>
                                         {data.status}
                                         </p>
                                     </div>
                                     ):
-                                    <div className="flex flex-row">
+                                    <div className="flex flex-row clear-left">
                                         <div className="w-2 h-2 bg-green rounded-full mt-1"></div>
                                         <p className="capitalize " style={{marginTop:'-4px', marginLeft:'5px'}}>
                                         {data.status}
@@ -80,7 +81,10 @@ const CardComponent:FunctionComponent<
                                     </div>
                                 }
                                 </div>
-                                <p>{data.value}</p>
+                                <div>
+                                <p style={{marginRight:'60px'}} className="">{data.value}</p>
+                                </div>
+                            
                                  </div>
                                
                              </div>
