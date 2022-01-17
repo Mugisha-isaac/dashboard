@@ -12,6 +12,7 @@ module.exports = {
           small_white:'#C3E2E1',
           big_white:'#EDF7F6',
           low_dark:'#3B3B47',
+          yellow:'#F29943'
       }
     },
   },

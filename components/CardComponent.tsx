@@ -67,9 +67,9 @@ const CardComponent:FunctionComponent<
                                     data.status === 'credit' ?(
                                         <p className="text-green-400">{data.status}</p>
                                     ):
-                                    <div className="">
-                                        <BiCircle className=""/>
-                                        <p className="text-yellow-400">
+                                    <div className="flex flex-row">
+                                        <p><BiCircle className="mt-1 ml-0 space-x-3 gap-3 w-3 h-3 text-yellow fill-yellow"/></p>
+                                        <p className="capitalize " style={{marginTop:'-4px', marginLeft:'5px'}}>
                                         {data.status}
                                         </p>
                                     </div>
