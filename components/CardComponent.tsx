@@ -66,10 +66,14 @@ const CardComponent:FunctionComponent<
                                 {
                                     data.status === 'credit' ?(
                                         <p className="text-green-400">{data.status}</p>
-                                    ): <p className="text-yellow-400">
-                                        <BiCircle/>
+                                    ):
+                                    <div className="">
+                                        <BiCircle className=""/>
+                                        <p className="text-yellow-400">
                                         {data.status}
                                         </p>
+                                    </div>
+                                    
                                 }
                                 </div>
                                 <p>{data.value}</p>
