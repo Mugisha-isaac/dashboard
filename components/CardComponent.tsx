@@ -43,10 +43,10 @@ const CardComponent:FunctionComponent<
                 </div>
             </div>
         </div>
-        <div className="bg-low_dark rounded-2xl relative " style={{width:'480px', marginTop:'-240px', marginLeft:'430px', height:'540px'}} >
-               <div className="border-dotted border-white bg-white absolute top-5 right-5 " style={{width:'120px', height:'140px'}}>
+        <div className="bg-low_dark rounded-2xl relative " style={{width:'490px', marginTop:'-254px', marginLeft:'430px', height:'580px'}} >
+               <div className="border-dotted border-white bg-low_dark  absolute top-5 right-5 " style={{width:'120px', height:'140px',opacity:'0.7', border:'1px dashed #ffff'}}>
                  <BsFillPlusCircleFill className="text-white h-7 w-7 bg-none" style={{marginTop:'20px', marginLeft:'50px'}} />
-                 <p className="text-small text-white pt-10 pl-5 ">ADD CARD</p>
+                 <p className="text-small text-white pt-10 pl-5 " style={{opacity:'1'}}>ADD CARD</p>
                </div>
                <div className=" absolute" style={{marginTop:'180px', width:'100%'}}>
                    <p className="capitalize text-xl  text-white px-8">last transactions</p>
@@ -61,9 +61,9 @@ const CardComponent:FunctionComponent<
                          <div className=" px-5 mt-3 text-white last:border-collapse  ml-3" style={{width:'95%', height:'auto', borderBottom:'1px solid #C3E2E1 '}}>
                              <div className="grid grid-cols-3 grid-rows-1  mb-6">
                                 {/* <p><BiLogIn className="w-4 h-2"/></p>  */}
-                                <p>{data.trans_name}</p>
+                                <p className="ml-5 w-50">{data.trans_name}</p>
                                 {/* <p className="text-small_white  px-6">{data.status}</p> */}
-                                <div className="" style={{marginLeft:'60px'}}>
+                                <div className="" style={{marginLeft:'65px',width:'100%'}}>
                                 {
                                     data.status === 'credit' ?(
                                         <div className="flex flex-row clear-left">
