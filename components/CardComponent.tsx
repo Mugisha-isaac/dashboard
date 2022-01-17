@@ -48,6 +48,9 @@ const CardComponent:FunctionComponent<
                  <BsFillPlusCircleFill className="text-white h-7 w-7 bg-none" style={{marginTop:'20px', marginLeft:'50px'}} />
                  <p className="text-small text-white pt-10 pl-5 " style={{opacity:'1'}}>ADD CARD</p>
                </div>
+               <div className="text-center">
+                   <p className="capitalize  bg-low_dark rounded-2xl absolute  right-8 text-big_white" style={{border:'1px solid #C3E2E1', width:'80px', height:'30px', marginTop:'185px'}}>view all</p>
+               </div>
                <div className=" absolute" style={{marginTop:'180px', width:'100%'}}>
                    <p className="capitalize text-xl  text-white px-8">last transactions</p>
                    <p className="px-8 text-small_white">
@@ -55,7 +58,7 @@ const CardComponent:FunctionComponent<
                         cardData[0].date
                     }   
                     </p>
-                   <div className="" style={{marginTop:'60px'}}>
+                   <div className="" style={{marginTop:'50px'}}>
                      {
                          cardData.map(data=>(
                          <div className=" px-5 mt-3 text-white last:border-collapse  ml-3" style={{width:'95%', height:'auto', borderBottom:'1px solid #C3E2E1 '}}>
