@@ -5,7 +5,7 @@ import CardsComponent from '../components/CardsComponent';
 
 export default function Home() {
   return (
-    <div className='bg-primary m-3 rounded-2xl ' style={{width:'1000px', height:'600px'}}>
+    <div className='bg-primary m-3   rounded-2xl ' style={{width:'1000px', height:'700px'}}>
      <div>
        <div className='w-12 h-40 relative top-7 left-3 rounded-sm text-white'>
          <AiFillSignal className="w-8 h-6" />

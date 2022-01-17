@@ -43,7 +43,7 @@ const CardComponent:FunctionComponent<
                 </div>
             </div>
         </div>
-        <div className="bg-low_dark rounded-2xl relative " style={{width:'490px', marginTop:'-254px', marginLeft:'430px', height:'580px'}} >
+        <div className="bg-low_dark rounded-2xl relative " style={{width:'490px', marginTop:'-200px', marginLeft:'430px', height:'620px'}} >
                <div className="border-dotted border-white bg-low_dark  absolute top-5 right-5 " style={{width:'120px', height:'140px',opacity:'0.7', border:'1px dashed #ffff'}}>
                  <BsFillPlusCircleFill className="text-white h-7 w-7 bg-none" style={{marginTop:'20px', marginLeft:'50px'}} />
                  <p className="text-small text-white pt-10 pl-5 " style={{opacity:'1'}}>ADD CARD</p>
