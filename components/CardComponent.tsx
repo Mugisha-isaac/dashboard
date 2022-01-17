@@ -55,25 +55,29 @@ const CardComponent:FunctionComponent<
                         cardData[0].date
                     }   
                     </p>
-                   <div className="mt-10">
+                   <div className="" style={{marginTop:'80px'}}>
                      {
                          cardData.map(data=>(
                          <div className=" px-5 mt-3 text-white">
-                             <div className="grid grid-cols-3 grid-rows-1 ml-5 ">
+                             <div className="grid grid-cols-3 grid-rows-1 ml-5 mb-6 " style={{width:'100%'}}>
                                 <p>{data.trans_name}</p>
                                 {/* <p className="text-small_white  px-6">{data.status}</p> */}
                                 <div className="px-8">
                                 {
                                     data.status === 'credit' ?(
-                                        <p className="text-green-400">{data.status}</p>
-                                    ):
-                                    <div className="flex flex-row">
-                                        <div className="w-3 h-3 bg-yellow rounded-full"></div>
+                                        <div className="flex flex-row">
+                                        <div className="w-2 h-2 bg-yellow rounded-full mt-1"></div>
                                         <p className="capitalize " style={{marginTop:'-4px', marginLeft:'5px'}}>
                                         {data.status}
                                         </p>
                                     </div>
-                                    
+                                    ):
+                                    <div className="flex flex-row">
+                                        <div className="w-2 h-2 bg-green rounded-full mt-1"></div>
+                                        <p className="capitalize " style={{marginTop:'-4px', marginLeft:'5px'}}>
+                                        {data.status}
+                                        </p>
+                                    </div>
                                 }
                                 </div>
                                 <p>{data.value}</p>
