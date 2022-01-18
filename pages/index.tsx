@@ -2,6 +2,7 @@ import Head from 'next/head'
 import Image from 'next/image'
 import {AiFillSignal,AiOutlinePieChart,AiTwotonePicture,AiTwotoneSetting,AiOutlinePoweroff} from 'react-icons/ai'
 import CardsComponent from '../components/CardsComponent';
+import Linechart from '../components/Linechart.js'
 
 export default function Home() {
   return (
@@ -17,6 +18,9 @@ export default function Home() {
        <span className='text-white text-lg absolute top-7 left-10 px-10 capitalize'>cards analytics</span>
        <div className='absolute' style={{width:'650px',height:'200px',top:'80px', left:'80px'}}>
          <CardsComponent/>
+       </div>
+       <div>
+         <Linechart/>
        </div>
      </div>
     </div>
