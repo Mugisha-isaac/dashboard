@@ -1,4 +1,4 @@
-import { borderColor, height } from "@mui/system";
+
 import { FunctionComponent, useState } from "react"
 import { ICard, ITransactions } from "../types"
 import {BsFillPlusCircleFill} from 'react-icons/bs'
@@ -61,7 +61,7 @@ const CardComponent:FunctionComponent<
                    <div className="" style={{marginTop:'50px'}}>
                      {
                          cardData.map(data=>(
-                         <div className=" px-5 mt-3 text-white last:border-collapse  ml-3" style={{width:'95%', height:'auto', borderBottom:'1px solid #C3E2E1 '}}>
+                         <div className="px-5 mt-3 text-white last:border-collapse  ml-3" style={{width:'95%', height:'auto', borderBottom:'1px solid #C3E2E1 '}}>
                              <div className="grid grid-cols-3 grid-rows-1  mb-6">
                                 {/* <p><BiLogIn className="w-4 h-2"/></p>  */}
                                 <p className="ml-5 w-50">{data.trans_name}</p>

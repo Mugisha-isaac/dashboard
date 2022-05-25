@@ -7,6 +7,7 @@ import Linechart from '../components/Linechart.js'
 export default function Home() {
   return (
     <div className='bg-primary m-3   rounded-2xl ' style={{width:'1000px', height:'700px'}}>
+      <p className='p-10 bg-red-500'>test</p>
      <div>
        <div className='w-12 h-40 relative top-7 left-3 rounded-sm text-white'>
          <AiFillSignal className="w-8 h-6" />
@@ -19,9 +20,9 @@ export default function Home() {
        <div className='absolute' style={{width:'650px',height:'200px',top:'80px', left:'80px'}}>
          <CardsComponent/>
        </div>
-       <div>
+       {/* <div>
          <Linechart/>
-       </div>
+       </div> */}
      </div>
     </div>
   )
